@@ -21,6 +21,12 @@
     gap: 4rem;
 }
 
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .project_block {
     padding-top: 7rem;
     display: flex;
@@ -53,4 +59,101 @@
 .stack_item_title {
     font-weight: 200;
     font-size: 1.3rem;
+}
+
+
+
+@media screen and (max-width:1100px) {
+    .image {
+        height: 40vh;
+    }
+    .projects_header {
+        font-size: 5rem;
+    }
+ 
+    @media screen and (max-width:870px) {
+        .projects_header {
+            font-size: 3rem;
+        }
+        .image {
+            height: 28vh;
+        }
+
+        .stack_item_title {
+            font-size: 1rem;
+        }
+        
+        .title {
+            font-size: 2rem;
+        }
+        
+    }
+
+    @media screen and (max-width:768px) {
+        .project_block {
+            flex-direction: column;
+        }
+
+        .icons {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+        } 
+
+        .pretitle {
+            font-size: 1rem;
+        }
+
+        .projects_header {
+            height: 3vh;
+            font-size: 2rem;
+        }
+    }
+    @media screen and (max-width:630px) {
+        .project_block {
+            padding-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .icons {
+            grid-template-columns: 2fr 2fr ;
+        } 
+
+        @media screen and (max-width:540px) {
+            .project_section {
+                padding: 3rem 5rem;
+            }
+            .projects_header {
+                height: 1vh;
+                font-size: 1rem;
+            }
+            .image {
+                height: 22vh;
+            }
+            .project_block {
+                padding-top: 3rem;
+                display: flex;
+                justify-content: space-between;
+            }
+            .icons {
+                grid-template-columns: 2fr 2fr ;
+            } 
+            .title {
+                font-size: 1rem;
+            }
+
+            @media screen and (max-width:375px) {
+                .image {
+                    height: 20vh;
+                }
+                .icons {
+                    grid-template-columns: 2fr ;
+                }
+                .pretitle {
+                    width: 100%;
+                    font-size: .8rem;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
 }
