@@ -1,0 +1,12 @@
+.project_section {
+    width: 100%;
+    height: 100vh;
+
+    padding: 5rem 10rem;
+}
+
+.projects_header {
+    height: 10vh;
+    font-size: 6rem;
+    font-weight: 600;
+}
