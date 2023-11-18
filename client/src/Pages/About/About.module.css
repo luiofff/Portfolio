@@ -2,6 +2,11 @@
     padding: 5rem 10rem;
 }
 
+.invisible {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
 .main_content {
     height: 80vh;
 }
@@ -53,7 +58,7 @@
     padding-top: 10rem;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, calc(100%/3));
+    grid-template-columns: repeat(3, calc(95%/3));
     
 
     gap: 6rem;

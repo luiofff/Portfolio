@@ -7,6 +7,10 @@
     padding: 10px 0;
 }
 
+.invisible {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 
 .nav_bar_block {
     width: 30%;
