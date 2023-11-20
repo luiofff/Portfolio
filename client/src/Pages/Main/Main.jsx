@@ -3,6 +3,7 @@ import { Element } from 'react-scroll';
 import styles from './Main.module.css';
 import About from '../About/About';
 import Projects from '../Projects/Projects';
+import Footer from '../Footer/Footer';
 
 export default function Main() {
   const [aboutVisible, setAboutVisible] = useState(true);
@@ -12,7 +13,13 @@ export default function Main() {
       const scrollPosition = window.scrollY;
 
       // Adjust the scroll threshold as needed
-      const scrollThreshold = 1450;
+   
+      if (document.documentElement.clientWidth > 726) {
+        var scrollThreshold = 1450;
+      } else {
+        var scrollThreshold = 2350;
+      }
+      
 
       if (scrollPosition > scrollThreshold) {
         setAboutVisible(false);
@@ -40,6 +47,10 @@ export default function Main() {
 
       <Element name="projects" id="projects">
         <Projects />
+      </Element>
+
+      <Element  name="footer" id="footer">
+        <Footer />
       </Element>
     </>
   );
