@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.bfd6332c.css",
+    "main.js": "/Portfolio/static/js/main.d79fdebd.js",
+    "static/media/SYfoodMaket.png": "/Portfolio/static/media/SYfoodMaket.07823833539f157501d3.png",
+    "static/media/SYmaket.png": "/Portfolio/static/media/SYmaket.923c7aecdfdaacad7e17.png",
+    "index.html": "/Portfolio/index.html",
+    "main.bfd6332c.css.map": "/Portfolio/static/css/main.bfd6332c.css.map",
+    "main.d79fdebd.js.map": "/Portfolio/static/js/main.d79fdebd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfd6332c.css",
+    "static/js/main.d79fdebd.js"
+  ]
+}
